@@ -1,0 +1,40 @@
+.welcome-card ion-img {
+  max-height: 35vh;
+  overflow: hidden;
+}
+.title{
+  color: white;
+  text-align: center;
+  font-family: Arial black;
+
+}
+.datos {
+  bottom: 30%;
+  position: absolute;
+  left: 10%;
+  right: 10%;
+  font-size: 15px;
+  font-family: Arial;
+}
+.refaction {
+  width: 40%;
+  height: 7%;
+  position: absolute;
+  bottom: 10%;
+  left: 30%;
+  right: 30%;
+  font-size: 5mm;
+  text-align: center;
+  font-family: Arial;
+  color: white;
+  background-color: #174290;
+  border-radius: 50px;
+}
+.logo {
+  width: 50%;
+  left: 25%;
+  right: 25%;
+  top: 10%;
+  position: absolute;
+  z-index: 1;
+}

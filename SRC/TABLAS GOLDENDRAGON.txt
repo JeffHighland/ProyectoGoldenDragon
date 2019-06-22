@@ -1,0 +1,78 @@
+	
+	CREATE TABLE asesor (
+		idAsesor INT PRIMARY KEY,
+		nombre_asesor VARCHAR(45),
+		cedula_asesor BIGINT,
+		celular_asesor BIGINT,
+		estado_asesor BOOLEAN
+		
+	);
+	
+		CREATE TABLE empresa (
+	id_empresa INT PRIMARY KEY,
+	nombre_empresa VARCHAR(45),
+	empleado VARCHAR(45)
+	); 
+		CREATE TABLE vehiculo (
+	idVehiculo INT PRIMARY KEY,
+	descr_vehiculo VARCHAR(90),
+	placa VARCHAR(6),
+	fk_empresa_afiliada INT,
+	FOREIGN KEY (fk_empresa_afiliada) REFERENCES empresa (id_empresa)
+	
+	);
+	
+	CREATE TABLE usuario (
+		id_usuario INT PRIMARY KEY,
+		nombre_completo VARCHAR(45),
+		cedula BIGINT,
+		celular BIGINT,
+		fk_vehiculo INT,
+		fk_chatRepuestos INT,
+		FOREIGN KEY (fk_vehiculo) REFERENCES vehiculo (idVehiculo)
+	
+	);
+	CREATE TABLE chatRepuestos (
+	idChatRepuestos INT PRIMARY KEY,
+	fk_Chatusuario INT,
+	fk_Chatasesor INT,
+	fecha_chat DATE,
+	mensaje_chat VARCHAR(255),
+		FOREIGN KEY (fk_Chatusuario) REFERENCES usuario (id_usuario),
+		FOREIGN KEY (fk_Chatasesor) REFERENCES asesor (idAsesor)
+		
+	);	
+		
+
+
+	
+	CREATE TABLE repuestos (
+	idRepuesto INT PRIMARY KEY,
+	nombreRepuesto VARCHAR(45)
+		
+	);
+	
+	CREATE TABLE tallerMantenimiento (
+	idTallerMantenimiento INT PRIMARY KEY,
+	nombre_taller VARCHAR(45),
+	direccion_taller VARCHAR (45),
+	nombre_mecanico VARCHAR(45),
+	ciudad_taller VARCHAR(45),
+	telefono_taller BIGINT
+	);
+	
+	CREATE TABLE gruas (
+	idGruas INT PRIMARY KEY,
+	empresa_grua VARCHAR(45),
+	nombre_conductor VARCHAR(45),
+	telefono_grua BIGINT,
+	placa_grua VARCHAR(6),
+	ciudad_grua VARCHAR(45)
+	);
+	CREATE TABLE referenciados (
+	idReferenciados INT PRIMARY KEY,
+	nombre_referenciado VARCHAR(45),
+	telefono_referenciado BIGINT,
+	estado_referenciado BOOLEAN
+	);
+	

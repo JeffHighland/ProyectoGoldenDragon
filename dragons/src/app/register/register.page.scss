@@ -1,0 +1,56 @@
+.title{
+    color: white;
+    text-align: center;
+    font-family: Arial black;
+ }
+ .logo {
+    width: 50%;
+    left: 25%;
+    right: 25%;
+    top: 10%;
+    position: absolute;
+ }
+
+ .datos {
+   bottom: 30%;
+   position: absolute;
+   left: 10%;
+   right: 10%;
+   
+} 
+.register {
+   width: 40%;
+   height: 7%;
+   position: absolute;
+   bottom: 20%;
+   left: 30%;
+   right: 30%;
+   font-size: 5mm;
+   text-align: center;
+   font-family: Arial;
+   color: white;
+   background-color: #174290;
+   border-radius: 50px;
+}
+.back {
+   width: 30%;
+   height: 5%;
+   position: absolute;
+   bottom: 13%;
+   left: 35%;
+   right: 35%;
+   font-size: 80%;
+   text-align: center;
+   font-family: Arial;
+   color: white;
+   background-color: #4a79cf;
+   border-radius: 50px;
+
+}
+.parraf{
+   text-align: center;
+   position: absolute;
+   bottom: 40%;
+   font-family: Arial;
+   font-size: 20px;
+}

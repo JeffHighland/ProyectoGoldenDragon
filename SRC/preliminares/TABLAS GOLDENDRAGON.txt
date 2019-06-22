@@ -1,0 +1,32 @@
+-- Database: GoldenDragon
+
+-- DROP DATABASE "GoldenDragon";
+
+CREATE DATABASE "GoldenDragon"
+    WITH 
+    OWNER = postgres
+    ENCODING = 'UTF8'
+    LC_COLLATE = 'Spanish_Latin America.1252'
+    LC_CTYPE = 'Spanish_Latin America.1252'
+    TABLESPACE = pg_default
+    CONNECTION LIMIT = -1;
+	
+	CREATE TABLE usuario (
+		id_usuario INT PRIMARY KEY,
+		nombre_completo VARCHAR(45),
+		cedula BIGINT,
+		celular BIGINT
+	)
+		
+	CREATE TABLE vehiculo (
+	id_vehiculo INT PRIMARY KEY,
+	descr_vehiculo VARCHAR(90),
+	placa VARCHAR(6),
+	empresa_afiliada VARCHAR(45)
+	)
+	
+	CREATE TABLE empresa (
+	id_empresa INT PRIMARY KEY,
+	nombre_empresa VARCHAR(45),
+	
+	)

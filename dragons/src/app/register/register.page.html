@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar  class="title" color="secondary">
+    <ion-title>REGISTRO</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-img class="logo" src="/assets/newUser.svg"></ion-img>
+    <ion-card class="datos">
+    <ion-list>
+        <ion-item>
+          <ion-input placeholder="Nombre Completo"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input placeholder="Cedula de Ciudadania"></ion-input>
+        </ion-item>
+        <ion-item>
+        <ion-input placeholder="Celular"></ion-input>
+      </ion-item>
+    </ion-list>
+    </ion-card>
+    <button class="register" (click)=register()>Enviar</button>
+    <button class="back" (click)=back()>Atras</button>
+    
+
+</ion-content>
