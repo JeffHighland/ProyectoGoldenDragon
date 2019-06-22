@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AlertController } from '@ionic/angular';
 
 @Component({
   selector: 'app-tab3',
@@ -7,6 +8,17 @@ import { Component } from '@angular/core';
 })
 export class Tab3Page {
 
-  constructor() {}
+  constructor(public alertController: AlertController) {}
+  async presentAlert() {
+    const alert = await this.alertController.create({
+      header: 'Gracias',
+      subHeader: 'La información fue enviada',
+      message: 'Nuestros asesores se contactarán con tu referido. Pronto recibirás tus GoldenPuntos!',
+      buttons: ['OK']
+     
+    });
+
+    await alert.present();
+  }
 
 }
