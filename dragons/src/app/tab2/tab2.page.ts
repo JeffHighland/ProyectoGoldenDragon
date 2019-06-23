@@ -63,9 +63,9 @@ export class Tab2Page implements OnInit {
     // this.storage.set('marker', JSON.stringify(this.marcadores) );
     console.log(this.marcadores.length);
     //Creación del polígono
-     if(this.marcadores.length>=3){
-      this.paths=this.marcadores;
-      this.polygon=true;
+    //  if(this.marcadores.length>=3){
+    //   this.paths=this.marcadores;
+    //   this.polygon=true;
     //Creación de la línea
      if(this.marcadores.length==4)
       {
@@ -78,7 +78,7 @@ export class Tab2Page implements OnInit {
        this.lngB = parseFloat(evento.coords.lng);
        this.polyline = true;
      }
-    }
+    //}
   }
 
 }

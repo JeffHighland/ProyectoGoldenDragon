@@ -12,7 +12,8 @@
     <!-- Este codigo crea un mapa de google maps en la pagina con las coordenadas latitud longitud dadas -->
     <!-- the component as the initial center of the map: -->  
     <agm-map (mapClick)="agregarMarcador($event)" [latitude]="lat" [longitude]="lng" [zoom]='16'>
-      <agm-marker *ngFor="let marcador of marcadores" [latitude]="marcador.lat" [longitude]="marcador.lng" src="src/assets/location.svg" width="30%">
+      <agm-marker *ngFor="let marcador of marcadores" [latitude]="marcador.lat" [longitude]="marcador.lng" [iconUrl]="{url: '../assets/location.png', scaledSize: {height: 40, width: 40}}"
+       width="30%">
           <agm-info-window>
             <strong>{{marcador.title}}</strong>
             <p>{{marcador.description}}</p>
@@ -40,7 +41,7 @@
     <ion-fab-list side="top">
         <ion-icon></ion-icon>
         <ion-fab-button  class="crane" color="primary" src="/assets/crane2.svg">GRUA</ion-fab-button>
-        <ion-fab-button>TALLER</ion-fab-button>
+        <ion-fab-button color="primary" >TALLER</ion-fab-button>
     </ion-fab-list>
   </ion-fab>
 
