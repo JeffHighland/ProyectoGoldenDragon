@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NavController } from '@ionic/angular';
+import { AlertController } from '@ionic/angular';
 
 @Component({
   selector: 'app-register',
@@ -9,6 +10,7 @@ import { NavController } from '@ionic/angular';
 export class RegisterPage {
 
   constructor (
+    public alertController: AlertController,
     private navCtrl : NavController
     )
     {}
@@ -16,4 +18,13 @@ export class RegisterPage {
   back(){
     this.navCtrl.navigateForward('');
   }
+  async register() {
+    const alert = await this.alertController.create({
+      header: 'Muchas Gracias',
+      message: 'En un momento enviaremos su usuario y contraseña para poder acceder',
+      buttons: ['OK']
+     
+    });
+    await alert.present();
+}
 }

@@ -8,7 +8,7 @@ import { AlertController } from '@ionic/angular';
 })
 export class Tab3Page {
 
-  constructor(public alertController: AlertController) {}
+  constructor( public alertController: AlertController ) {}
   async presentAlert() {
     const alert = await this.alertController.create({
       header: 'Muchas Gracias',
