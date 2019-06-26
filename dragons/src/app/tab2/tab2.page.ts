@@ -55,6 +55,7 @@ export class Tab2Page implements OnInit {
   lngB : number;
   polyline = false;
 
+  
   constructor(private storage: Storage){  }
 
   agregarMarcador(evento){
@@ -81,4 +82,5 @@ export class Tab2Page implements OnInit {
     //}
   }
 
+  
 }
