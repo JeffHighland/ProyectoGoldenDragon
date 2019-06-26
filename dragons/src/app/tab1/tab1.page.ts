@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AlertController } from '@ionic/angular';
 
 @Component({
   selector: 'app-tab1',
@@ -7,6 +8,18 @@ import { Component } from '@angular/core';
 })
 export class Tab1Page {
 
-  constructor() {}
+  constructor( public alertController: AlertController ) {}
+  async refaction() {
+    const alert = await this.alertController.create({
+      header: 'Solicitud Enviada',
+      message: 'En unos minutos un asesor se comunicará contigo.',
+      buttons: ['OK']
+     
+    });
+
+    await alert.present();
+    
+
+  }
 
 }
