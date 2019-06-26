@@ -1,0 +1,60 @@
+.title{
+    color: white;
+    text-align: center;
+    font-family: Arial black;
+ }
+.login {
+    width: 40%;
+    height: 7%;
+    position: absolute;
+    bottom: 20%;
+    left: 30%;
+    right: 30%;
+    font-size: 20px;
+    text-align: center;
+    font-family: Arial;
+    color: white;
+    background-color: #ff7800;
+    border-radius: 50px;
+}
+.register {
+    width: 30%;
+    height: 5%;
+    position: absolute;
+    bottom: 13%;
+    left: 35%;
+    right: 35%;
+    font-size: 80%;
+    text-align: center;
+    font-family: Arial;
+    color: white;
+    background-color: #ff9c4a;
+    border-radius: 50px;
+}
+
+.parraf{
+    text-align: center;
+    font-family: Arial;
+  //  position: absolute;
+  top: 40%;
+  font-size: 20px;
+  size: 25%;
+  display: inline-flex;
+ 
+ }
+.datos {
+    bottom: 30%;
+    position: absolute;
+    left: 5%;
+    right: 5%;
+    //z-index: 2;
+   
+}
+.logo {
+    width: 80%;
+    left: 10%;
+    right: 10%;
+    top: 10%;
+    position: absolute;
+    z-index: 1;
+}

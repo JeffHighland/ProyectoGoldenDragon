@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar class="title" color="primary">
+        <ion-title>
+        Mantenimiento
+     </ion-title>
+</ion-toolbar>
+</ion-header>
+<ion-card-content>
+  <!-- Este codigo crea un mapa de google maps en la pagina con las coordenadas latitud longitud dadas -->
+  <!-- the component as the initial center of the map: -->  
+  <agm-map (mapClick)="agregarMarcador($event)" [latitude]="lat" [longitude]="lng" [zoom]='16'>
+    <agm-marker *ngFor="let marcador of marcadores" [latitude]="marcador.lat" [longitude]="marcador.lng" [iconUrl]="{url: '../assets/location.png', scaledSize: {height: 40, width: 40}}"
+     width="30%">
+        <agm-info-window>
+          <strong>{{marcador.title}}</strong>
+          <p>{{marcador.description}}</p>
+        </agm-info-window>
+    </agm-marker>
+     <agm-polygon *ngIf="polygon"  [paths]="paths" fillColor="#0081a2" strokeColor="#005ca2">
+    </agm-polygon>
+    <!-- <agm-polyline *ngIf="polyline" strokeColor="#174290" >
+      <agm-polyline-point [latitude]="latA" [longitude]="lngA">
+      </agm-polyline-point>
+      <agm-polyline-point [latitude]="latB" [longitude]="lngB">
+      </agm-polyline-point>
+    </agm-polyline> -->
+  </agm-map>
+</ion-card-content>
+
+<ion-content>
+
+
+  <ion-fab vertical="bottom" Horizontal="end" slot="fixed">
+    <ion-fab-button>
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-list side="top">
+        <ion-fab-button>Enviar Grua</ion-fab-button>
+        <ion-fab-button>Enviar información de taller más cercano</ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
+
+    <!-- <button class="mant" (click)=mant()>Enviar</button>   -->
+</ion-content>

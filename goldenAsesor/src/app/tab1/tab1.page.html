@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar class="title" color="primary">
+    <ion-title>
+      Repuestos
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-img class="logo" src="/assets/refaction.svg"></ion-img>
+    <ion-list lines="none" class="datos">
+        <p>Esta plataforma permitirá asesorar a los diferentes transportadores con sus solicitudes de repuesto</p>
+      <ion-item>
+        <ion-icon slot="start" color="medium" name="book"></ion-icon>
+        <ion-input placeholder="Descripcion de la pieza"></ion-input>
+        </ion-item>
+    </ion-list>
+    <button class="refaction" (click)=refaction()>Responder Solicitudes</button>
+</ion-content>

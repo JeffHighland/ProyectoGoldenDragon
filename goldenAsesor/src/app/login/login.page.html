@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar class="title" color="primary">
+    <ion-title>INGRESO</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-img class="logo" src="/assets/dragon.svg"></ion-img>
+  <ion-item class="parraf">
+  <p>Ingresa tus datos para continuar</p>
+</ion-item>
+  <ion-card class="datos">
+      <ion-list>
+      <ion-item>
+        <ion-input placeholder="Usuario"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input placeholder="Contraseña"></ion-input>
+      </ion-item>
+    </ion-list>
+  </ion-card>
+
+  <button class="login" (click)=login()>Ingresar</button>
+  <button class="register" (click)=register()>Registrarse</button>
+  
+</ion-content>

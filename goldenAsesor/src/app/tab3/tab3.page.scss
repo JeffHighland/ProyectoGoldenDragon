@@ -1,0 +1,45 @@
+.title{
+    color: white;
+    text-align: center;
+    font-family: Arial black;
+  }  
+  .refer {
+    width: 60%;
+    height: 7%;
+    position: absolute;
+    bottom: 10%;
+    left: 20%;
+    right: 20%;
+    text-align: center;
+    font-family: Arial;
+    font-size: 20px;
+    color: white;
+    background-color: #ff7800;
+    border-radius: 50px;
+   }
+   .datos {
+        bottom: 20%;
+        position: absolute;
+        left: 5%;
+        right: 5%;
+        //z-index: 2;
+      }
+      .logo {
+        width: 50%;
+        left: 25%;
+        right: 25%;
+        top: 10%;
+        position: absolute;
+        z-index: 1;
+      }
+      .parraf {
+        text-align: center;
+        //  position: absolute;
+        top: 40%;
+        font-size: 40%;
+        size: 50%;
+        display: block;  
+        font-family: Arial;
+        font-size: 15px;
+        text-align: center;
+}
